@@ -1,0 +1,148 @@
+@charset "utf-8";
+body { margin:0; padding:0; width:100%; background:url(/MyEasyHome/vues/images/bg_main.gif);}
+html { padding:0; margin:0;}
+
+/* main */
+.main {width:100%; padding:0; margin:0 auto; background:url(/MyEasyHome/vues/images/main_bg.jpg) top repeat-x; }
+.resize { width:955px; margin:0 auto;}
+
+/********** header **********/
+.header { }
+
+.block_header {margin:0 auto; width:980px;}
+.top_menu { float:right; padding:4px 10px; font:normal 11px Tahoma, Geneva, sans-serif; color:#4e4e4e; line-height:1.6em;}
+.top_menu a { font:normal 11px Tahoma, Geneva, sans-serif; color:#4e4e4e; text-decoration:none;}
+.top_menu a:hover {text-decoration:underline;}
+/* logo */
+.logo { float:left; padding:0; margin:10px 0 0 0; width:232px;}
+.login { float:right; padding:5px 5px; margin:70px 0 0 0; width:150px;}
+.login p { font:normal 11px Georgia, "Times New Roman", Times, serif; color:#948172; padding:0; margin:0;}
+.login a { font:normal 11px Georgia, "Times New Roman", Times, serif; color:#948172; text-decoration:none;}
+.login a:hover { font:bold 11px Georgia, "Times New Roman", Times, serif; color:#948172; text-decoration: underline;}
+
+/* blog_menu */
+.blog_menu {width:992px; height:70px; margin:0px auto 0 auto; padding:0; background: url(/MyEasyHome/vues/images/menu_bg.jpg) top no-repeat;}
+
+/* search */
+.search { padding:0; margin:20px 0 0 0; width:250px; float:right; height:38px;}
+.search span { display:block; float:left;}
+.search a { display:block; float:left; padding:10px 10px 0 10px; line-height:1.6em; color:#4270a1; font:normal 11px Georgia, "Times New Roman", Times, serif; text-decoration:none;}
+.search a:hover { text-decoration:underline;}
+.search form { display:block; float:left; padding:5px 10px 0 10px;}
+.search form .keywords { float:left; background: none; border:0; height:16px; width:140px; padding:5px 10px; line-height:16px; margin:0 10px 0 0; font:normal 12px Tahoma, Geneva, sans-serif; color:#000;}
+.search form .button { float:left;}
+
+/* menu */	
+.menu { padding:0; margin:20px 0 0 0; width:550px; float:left; height:43px;}
+.menu ul { padding:0; margin:0 20px; list-style:none; border:0;}
+.menu ul li { float:left; margin:0; padding:0 3px; border:0;}
+.menu ul li a { float:left; margin:0; padding:10px 0; color:#555555; font:bold 12px  Georgia, "Times New Roman", Times, serif; text-decoration:none;}
+.menu ul li a span { padding:10px 20px; background:none;}
+.menu ul li a:hover { background: url(/MyEasyHome/vues/images/r_menu.gif) no-repeat right top;}
+.menu ul li a:hover span { background:url(/MyEasyHome/vues/images/l_menu.gif) no-repeat left top;}
+.menu ul li a.active {  background:url(/MyEasyHome/vues/images/r_menu.gif) no-repeat right top;}
+.menu ul li a.active span { background:url(/MyEasyHome/vues/images/l_menu.gif) no-repeat left top;}
+
+/********** slider **********/
+.slider { background:#72941b url(/MyEasyHome/vues/images/screen_bg.jpg) top no-repeat; width:992px; margin:0 auto; padding:0;}
+
+.title_page { background:url(/MyEasyHome/vues/images/title_bg.jpg) top no-repeat; margin:0 auto; padding:0; height:83px; width:992px;}
+.title_page h1 { margin:0; padding:0; color:#ffffff; font:normal 48px Georgia, "Times New Roman", Times, serif; text-indent:50px; line-height:1.6em;}
+
+/*simple text*/
+.simple { width:992px; margin:0 auto; padding:0;}
+.simple h2 { width:400px; float:left; font:normal 30px Georgia, "Times New Roman", Times, serif; color:#fff; padding:10px 0 0 30px; margin:0;}
+.simple .text { font:normal 11px Georgia, "Times New Roman", Times, serif; color:#fff; width:200px; float:left; margin:10px 0; padding:0;}
+
+.slider div.slice1 { margin:0 auto; width:952px; height:300px; padding:10px 10px;}
+.slider div.slice1 p.img { float:left; padding:0; margin:0 30px;}
+.slider div.slice1 h2 { font:normal 48px Georgia, "Times New Roman", Times, serif; color:#fff; margin:0; margin:0; padding:10px 0; line-height:1.2em; float:none;}
+.slider div.slice1 p { font:normal 14px Georgia, "Times New Roman", Times, serif; color:#fff; margin:0; margin:0; line-height:1.6em;}
+
+ul.body_menu_nav { float:left; padding:10px 20px 0 20px; margin:0 auto; list-style:none; width:952px; background:url(/MyEasyHome/vues/images/menu_nav_bg.jpg) no-repeat top; height:70px;}
+ul.body_menu_nav li { float:left; display:block; padding:20px 7px 0 7px; margin:0; width:224px;}
+ul.body_menu_nav li span { display:block; padding:12px 10px;}
+ul.body_menu_nav li img { padding:0 5px;}
+ul.body_menu_nav li a { display:block; font:normal 18px Georgia, "Times New Roman", Times, serif; color:#484848; text-decoration:none; line-height:1.8em;}
+ul.body_menu_nav li.tabs-selected { background:url(/MyEasyHome/vues/images/menu_nav_bg_h.gif) no-repeat center top;}
+ul.body_menu_nav li.tabs-selected a { background:url(/MyEasyHome/vues/images/b_r_menu.gif) no-repeat right top;}
+ul.body_menu_nav li.tabs-selected a span { background:url(/MyEasyHome/vues/images/b_l_menu.gif) no-repeat left top;}
+ul.body_menu_nav li a:hover { background:url(/MyEasyHome/vues/images/b_r_menu.gif) no-repeat right top;}
+ul.body_menu_nav li a:hover span { background:url(/MyEasyHome/vues/images/b_l_menu.gif) no-repeat left top;}
+
+
+/********** block index **********/
+.body { width:972px; margin:10px auto; padding:0; background:#fff url(/MyEasyHome/vues/images/body_b.gif) no-repeat bottom;}
+.body_t_i { background:url(/MyEasyHome/vues/images/body_t.gif) no-repeat top;}
+.body h2 { font:normal 18px Georgia, "Times New Roman", Times, serif; color:#2c2c2c; margin:0; padding: 10px 0;}
+.body h3 { font:normal 18px Georgia, "Times New Roman", Times, serif; color:#545454; padding:10px 0; margin:0; line-height:1.2em;}
+.body p { font:normal 11px Georgia, "Times New Roman", Times, serif; color:#545454; line-height:1.8em;}
+.body em { font:italic 12px Georgia, "Times New Roman", Times, serif; color:#797979; line-height:1.8em; padding:10px 0 0 10px;}
+.body strong { color:#2c2c2c;}
+
+/*Welcome*/
+.Welcome { width:570px; margin:5px auto; padding:10px 30px; float: right;}
+.Welcome ul { list-style:none; margin:20px auto 20px auto; padding:10px 10px;}
+.Welcome ul li { padding:5px 0 5px 20px; margin:0; font:normal 11px Georgia, "Times New Roman", Times, serif; color:#2c2c2c; line-height:1.8em;}
+.Welcome ul li strong { color:#a63812; font:bold 11px Georgia, "Times New Roman", Times, serif; line-height:1.8em;}
+.Welcome a { font:bold 11px Georgia, "Times New Roman", Times, serif; color:#7b9519;}
+
+/*navigation*/
+ul.navigation  { margin:0; padding:0 10px;}
+ul.navigation li { list-style:none; border-bottom:1px solid #d9d9d9; padding:5px 10px; margin:0;}
+ul.navigation li a { font:normal 11px Georgia, "Times New Roman", Times, serif; color:#2c2c2c; text-decoration:none;}
+ul.navigation li a:hover { color:#99ac1e; text-decoration: underline;}
+ul.navigation li a.active { color:#99ac1e; text-decoration: underline;}
+
+/* lister */
+.lister { padding:10px; text-align:center;}
+
+/*BoX*/
+.Box { width:280px; margin:5px auto; padding:10px 30px; float:left;}
+.Box a { font:normal 11px Georgia, "Times New Roman", Times, serif; color:#7b9519; text-decoration:underline;}
+.Box .link { font:normal 11px Georgia, "Times New Roman", Times, serif; color:#08896f; text-decoration:underline; float: none; background:none; padding:0;}
+.Box span { font:bold 11px Georgia, "Times New Roman", Times, serif; color:#959595;}
+.Box em { padding:0; margin:0; font:italic 11px Georgia, "Times New Roman", Times, serif; color:#505050; line-height:1.8em;}
+.Box p.name { font:bold italic 11px Georgia, "Times New Roman", Times, serif; color:#505050; text-align:right; padding:0; margin:0;}
+
+/* testimonial */
+.testimonial { background:url(/MyEasyHome/vues/images/bg_testimonials_c.gif) repeat-y left; width:257px; margin:0; border:0;}
+.testimonial div { background:url(/MyEasyHome/vues/images/bg_testimonials_b.gif) no-repeat bottom left; width:257px; margin:0; border:0;}
+.testimonial div div { background:url(/MyEasyHome/vues/images/bg_testimonials_t.gif) no-repeat top left; padding:5px 10px; width:237px;}
+.testimonial p { margin:0; padding:10px; line-height:1.8em;}
+
+/********** contact form **********/
+#contactform { margin:0; padding:5px 10px;}
+#contactform * { color:#222222;}
+#contactform ol { margin:0; padding:0; list-style:none;}
+#contactform li { margin:0; padding:0; background:none; border:none; display:block;}
+#contactform li.buttons { margin:5px 0 5px 110px;}
+#contactform label { margin:0; width:110px; display:block; padding:10px 0; font:bold 11px Arial, Helvetica, sans-serif; color:#505050; text-transform:capitalize; float:left;}
+#contactform label span { color:#ff0000;}
+#contactform input.text { width:400px; border:1px solid #dcdcdc; margin:10px 0; padding:5px 2px; height:16px; background:#f5f5f5; float:left;}
+#contactform textarea { width:400px; border:1px solid #dcdcdc; margin:10px 0; padding:2px; background:#f5f5f5; float:left;}
+#contactform li.buttons input { padding:3px 0; margin:0; border:0; color:#FFF; float:left;}
+p.response { text-align:center; color:#2c2c2c; font: bold 11px Arial, Helvetica, sans-serif; line-height:1.8em; width:auto;}
+
+.FBG { border-top:1px solid #fff; background:#e5e5e5; border-bottom:1px solid #c5c5c5;}
+.FBG em { font:bold italic 11px Georgia, "Times New Roman", Times, serif; color:#616161; float: right;}
+.FBG h2 { font:normal 18px Georgia, "Times New Roman", Times, serif; color:#0d0d0d; border-bottom:1px solid #c3c3c3; padding:20px 5px 20px 50px; margin:0;}
+.FBG p { font:normal 11px Georgia, "Times New Roman", Times, serif; color:#616161; line-height:1.6em;}
+.FBG img { margin:5px 5px; padding:0; float:left;}
+.FBG a { font:normal 11px Georgia, "Times New Roman", Times, serif; color:#08896f; text-decoration:none;}
+.FBG_resize { width:980px; margin:10px auto; padding:0; }
+.fbg_box { width:300px; float:left; margin:10px 5px; padding:5px 5px; }
+.Contact { width:300px; float:left; margin:10px 5px; padding:5px 5px; }
+.Contact h2 { background:url(/MyEasyHome/vues/images/h2_bg_Contact.gif) left no-repeat;}
+.Say { width:300px; float:left; margin:10px 5px; padding:5px 5px;}
+.Say h2 { background:url(/MyEasyHome/vues/images/h2_bg_They.gif) left no-repeat;}
+.What { width:300px; float:left; margin:10px 5px; padding:5px 10px;}
+.What h2 { background:url(/MyEasyHome/vues/images/h2_bg_What.gif) left no-repeat;}
+.What a { float:right; background:url(/MyEasyHome/vues/images/bg_a_What.gif) left no-repeat; padding:0 0 0 20px; font: bold  11px Georgia, "Times New Roman", Times, serif; color:#0d0d0d;}
+/********** footer **********/
+.footer { background: url(/MyEasyHome/vues/images/bg_footer.gif); padding:0; width:972px; margin:0px auto; height:54px;}
+.footer p { text-align:center; font:normal 11px Georgia, "Times New Roman", Times, serif; color:#2c2c2c; padding:15px 5px; margin:0;}
+.footer a {font:normal 11px Georgia, "Times New Roman", Times, serif; color:#2c2c2c; text-decoration:none;}
+
+p.clr, .clr { clear:both; padding:0; margin:0; background:none;}
+li.bg, .bg { clear:both; border-top:1px solid #d9d9d9; padding:0; margin:5px 0; background:none;}
