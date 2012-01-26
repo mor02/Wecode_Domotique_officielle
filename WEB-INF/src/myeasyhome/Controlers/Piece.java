@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
 
-import myeasyhome.exceptions.PieceException;;
+import myeasyhome.exceptions.PieceException;
 import myeasyhome.javabean.Entite;
 import myeasyhome.modeles.ModelPiece;;
 
@@ -34,7 +34,7 @@ public class Piece extends HttpServlet {
             	
             	//ToDo Reccupération de la piece dans laquelle on veut ajouter l'entite
             	
-            	myeasyhome.javabean.Piece p1 = new myeasyhome.javabean.Piece("1", "cuisine");
+            	myeasyhome.javabean.Piece p1 = new myeasyhome.javabean.Piece(1, "cuisine");
             	
             	// construction de l'entite à ajouter
             	Entite nouvelleEntite = new Entite(refEntite, FournisseurEntite, 0);
@@ -56,16 +56,16 @@ public class Piece extends HttpServlet {
             		if(result == 1)
             		{
             			request.setAttribute("messageValide", "l'entite est bien ajouté");
-            			getServletContext().getRequestDispatcher("/admin/RAjoutEntite.jsp").forward(request, response);
+            			getServletContext().getRequestDispatcher("/vues/admin/rajoutEntite.jsp").forward(request, response);
             		}
             	}
             	
-                 /
+                 
             }
             // Si le formulaire est incomplet, renvoi vers le formulaire avec un message d'erreur
             else {
                   request.setAttribute("erreur", "Saisies insuffisantes");
-                  getServletContext().getRequestDispatcher("/admin/AjouterPiece.jspf")
+                  getServletContext().getRequestDispatcher("ajouterEntite.jspf")
                              .forward(request, response);
             }
       }

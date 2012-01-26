@@ -1,0 +1,76 @@
+<%
+  String UserName=(String)session.getAttribute("loggedUser");
+ String textLogin1 =null;
+ String pageLogin1 =null;
+ String textLogin2 =null;
+ String pageLogin2 =null;
+	
+if(UserName !=null){
+	textLogin1 ="Bienvenu : " +UserName  ;
+	pageLogin1 ="deconnexion" ;
+	textLogin2 ="deconnexion" ;
+	pageLogin2 ="deconnexion" ;
+	
+}else{
+	textLogin1 ="connexion"  ;
+	pageLogin1 ="connexion" ;
+	textLogin2 ="Apropo" ;
+	pageLogin2 ="apropo" ;
+}
+%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Home</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style>
+<%@include file="../css/style.css"  %> 
+</style>
+<% String urlapplication =getServletContext().getInitParameter("urlapplication"); %>
+
+<link href="css/jquery.tabs.css" rel="stylesheet" type="text/css" media="print, projection, screen" />
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/jquery.tabs.pack.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(function() {
+		$('#tabs_block').tabs({ fxFade: true, fxSpeed: 'fast' });
+	});
+</script>
+<!-- Additional IE/Win specific style sheet (Conditional Comments) -->
+<!--[if lte IE 7]>
+<link rel="stylesheet" href="css/jquery.tabs-ie.css" type="text/css" media="projection, screen">
+<![endif]-->
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <div class="block_header">
+      <div class="logo"> <a href="<%out.println(urlapplication);%>"><img src="/MyEasyHome/vues/images/logo.png" width="355" height="75" border="0" alt="logo" /></a> </div>
+      <div class="login">
+        <p>
+        <a href="<%out.println(urlapplication);%>vues/index.jsp?page=<%out.println(pageLogin1);%>"><%out.println(textLogin1);%></a>
+         | <a href="<%out.println(urlapplication);%>vues/index.jsp?page=<%out.println(pageLogin2);%>"><%out.println(pageLogin2);%></a></p>
+      </div>
+      <div class="clr"></div>
+    </div>
+    
+    <div class="blog_menu">
+        <!-- Affiche Message d'erreur s'il ya une erreur sur une page...-->
+      
+      <%
+      String ErreurMessage=(String)request.getAttribute("erreur");
+      if(ErreurMessage!=null){
+      %>
+      <div class="menu">
+      <ul>
+      <li><span>
+      <%=ErreurMessage %>
+      </span>
+      </li>
+      </ul>
+      </div>
+      <%} %>
+      <div class="clr">
+      </div>
+    </div>
+   

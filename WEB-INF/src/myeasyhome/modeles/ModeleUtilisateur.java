@@ -8,23 +8,24 @@ import javax.sql.DataSource;
 
 import myeasyhome.boiteoutils.OutilsBaseDeDonnees;
 import myeasyhome.exceptions.UserException;
+import myeasyhome.javabean.Utilisateur;
 
-public class ModeleLogin {
+public class ModeleUtilisateur {
 	DataSource ds = null;
 	Connection connection = null;
 	ResultSet rs = null;
-	public ModeleLogin(DataSource ds) {
+	public ModeleUtilisateur(DataSource ds) {
 		this.ds = ds;
 	}
 	
 	
-public String checkUserPassword (String login , String passwd)throws UserException{
+public int checkUserPassword (Utilisateur user)throws UserException{
 		
 		
 		PreparedStatement requete = null;
 		
-		String sql="SELECT * FROM USER Where login=" + login +" AND passwd="+ passwd;
-		return "eee"; 
+		String sql="SELECT * FROM USER Where login=" + user.getLogin() +" AND passwd="+ user.getPasswd();
+		return 2; 
 	}	
 	
 

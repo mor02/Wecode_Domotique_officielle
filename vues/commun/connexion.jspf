@@ -1,0 +1,40 @@
+        <div class="slider" id="tabs_block">
+      <div class="slice1" id="section-1">
+        <p class="img">&nbsp;</p>
+        <h2>Login </h2>
+        <div style="position:absolute; width: 217px; height: 165px; left: 747px; top: 207px;">&nbsp;<img src="images/remote.png" /></div>
+        <form id="connexionUser" name="connexionUser" method="post" action="do.user">
+          <center>
+            <table width="70%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="28%" height="43" style="padding-left:50px"><p>Identifiant : </p></td>
+              <td width="72%">
+                	<input name="userLogin" type="text" id="login" maxlength="50"  style="height:25px; width:250px" />
+                </td>
+            </tr>
+            <tr>
+              <td height="38" style="padding-left:50px"><p>Mot de passe : </p></td>
+              <td>
+                	<input name="userPasswd" type="text" id="password" maxlength="50" style="height:25px; width:250px" />
+              </td>
+              </tr>
+            <tr>
+              <td height="45">&nbsp;</td>
+              <td>
+              <INPUT TYPE="image" SRC="images/login.png" HEIGHT="30" WIDTH="120" BORDER="0" ALT="Submit Form">
+             </td>
+              </tr>
+          </table>        
+          </center>
+        
+        </form>
+       <p>&nbsp;</p>
+       
+      </div>
+      
+      <ul class="body_menu_nav">
+       
+      </ul>
+    </div>
+    <div class="clr"></div>
+    <div class="clr"></div>
