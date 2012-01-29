@@ -1,0 +1,43 @@
+ <div class="slider" id="tabs_block">
+      <div class="slice1" id="section-1">
+        <p class="img">&nbsp;</p>
+        
+        
+        <%
+if(request.getAttribute("messageValide") != null){
+%>
+
+<center><font color="white"><% out.println(request.getAttribute("messageValide"));%></font></center>
+
+<% 
+} else {
+%>
+        <h2>Ajouter une Lampe </h2>
+        <p> 
+        
+        <form name="ajouterLampe" action="AjouterLampe.lampe" method="post">
+        
+        Reference :<br />
+        <input name="refLampe" type="text" /><br />
+        Fournisseur :<br />
+        <input name="FournisseurLampe" type="text" />
+        <br />
+        
+        <input name="envoyerAjouterLampe" type="submit" />
+        
+        </form>
+         </p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <% 
+} 
+%>
+      </div>
+    
+      <ul class="body_menu_nav">
+       
+      </ul>
+    </div>
+    <div class="clr"></div>
+    <div class="clr"></div>
