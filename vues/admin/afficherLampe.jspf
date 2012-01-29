@@ -1,0 +1,64 @@
+ <div class="slider" id="tabs_block">
+      <div class="slice1" id="section-1">
+        <p class="img">&nbsp;</p>
+        
+        
+
+        <h2>Liste des Lampes </h2>
+        <p> 
+<%@ page import="java.util.ArrayList" %>
+<%@page import="myeasyhome.javabean.Lampe"%>
+<%@page import="myeasyhome.modeles.ModeleLampe"%>
+<%
+
+
+// on récupère les données
+ArrayList listeLampe=(ArrayList)request.getAttribute("listeLampe");
+
+%>
+
+<table  border="1" cellspacing="0" cellpadding="4">
+  <tr bgcolor="#2e597b">
+    <td width="150">REFERENCE </td>
+    <td width="150">ID PIECE</td>
+    <td width="150">ETAT </td>
+    <td width="150">FOURNISSEUR</td>
+    <td width="150">ETAT FCT</td>
+    
+  </tr>
+   <%
+for(int i=0;i<listeLampe.size();i++)
+{
+Lampe lampe=(Lampe)listeLampe.get(i);
+String etat="off";
+String etatfct="en panne";
+if(lampe.getEtat()==1) etat="on"; 
+if(lampe.getEtatFct()==1) etatfct="ok"; 
+//jjj
+
+out.println("<tr>");
+out.println("<td>"+lampe.getReference()+"</td>");
+out.println("<td>"+lampe.getIdPiece()+"</td>");
+out.println("<td>"+etat+"</td>");
+out.println("<td>"+lampe.getFournisseur()+"</td>");
+out.println("<td>"+etatfct+"</td>");
+out.println("</tr>");
+}
+out.println("</table>");
+
+%>     
+        
+        
+         </p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+
+      </div>
+    
+      <ul class="body_menu_nav">
+       
+      </ul>
+    </div>
+    <div class="clr"></div>
+    <div class="clr"></div>
