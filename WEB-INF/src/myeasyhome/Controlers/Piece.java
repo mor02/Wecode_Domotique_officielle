@@ -37,7 +37,7 @@ public class Piece extends HttpServlet {
             	myeasyhome.javabean.Piece p1 = new myeasyhome.javabean.Piece(1, "cuisine");
             	
             	// construction de l'entite à ajouter
-            	Entite nouvelleEntite = new Entite(refEntite, FournisseurEntite, 0);
+            	Entite nouvelleEntite = new Entite(refEntite, FournisseurEntite, 0,0,0,0,0,0,0);
             	
             	//instanciation du model
             	

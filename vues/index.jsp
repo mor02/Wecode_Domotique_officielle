@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<% // un petit test pour voir le fonctionnement de GIT
+<%
   String indexPage=(String)request.getParameter("page");
    String chemin = (String)session.getAttribute("typeUser");
    

@@ -7,5 +7,5 @@
     <updateXml>true</updateXml>
     <warLocation></warLocation>
     <extraInfo></extraInfo>
-    <webPath>/Wecode_Domotique_officielle</webPath>
+    <webPath>/MyEasyHome</webPath>
 </tomcatProjectProperties>
