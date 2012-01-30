@@ -22,6 +22,10 @@
 		<servlet-class>myeasyhome.Controlers.ControleurUtilisateur</servlet-class>
 		<servlet-name>user</servlet-name>
 	</servlet>
+		<servlet-mapping>
+		<servlet-name>user</servlet-name>
+		<url-pattern>*.user</url-pattern>
+	</servlet-mapping>
 	
 	<servlet>
 		<servlet-class>myeasyhome.Controlers.Piece</servlet-class>
@@ -30,6 +34,23 @@
 	<servlet-mapping>
 		<servlet-name>Piece</servlet-name>
 		<url-pattern>*.Piece</url-pattern>
+	</servlet-mapping>
+
+<servlet>
+		<servlet-class>myeasyhome.Controlers.ControleurEtage</servlet-class>
+		<servlet-name>ControleurEtage</servlet-name>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControleurEtage</servlet-name>
+		<url-pattern>*.ControleurEtage</url-pattern>
+	</servlet-mapping>
+<servlet> 
+		<servlet-class>myeasyhome.Controlers.ControleurMaison</servlet-class>
+		<servlet-name>ControleurMaison</servlet-name>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControleurMaison</servlet-name>
+		<url-pattern>*.ControleurMaison</url-pattern>
 	</servlet-mapping>
 
 	<jsp-config>

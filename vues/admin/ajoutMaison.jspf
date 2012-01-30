@@ -1,0 +1,40 @@
+
+<div class="slider" id="tabs_block">
+	<div class="slice1" id="section-1">
+		<p class="img">&nbsp;</p>
+		<h2>Ajouter Maison:</h2>
+		<form name="ajouterMaison" action="do.ControleurMaison" method="post">
+			<table>
+				<tr>
+					<td>Adresse:</td>
+					<td><input name="ad" type="text" size="27" />
+					</td>
+				</tr>
+				<tr>
+					<td>Propriétaire:</td>
+					<td><input name="pr" type="text" size="27" />
+					</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td align="right">&nbsp;</td>
+					<td><div align="left">
+							<input type="submit" class="submitbutton" value="Ajouter" name="maison"/> 
+						
+							<input name="reset" type="reset" class="submitbutton" value="Annuler" />
+						</div>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+	<ul class="body_menu_nav">
+
+	</ul>
+</div>
+<div class="clr"></div>
+<div class="clr"></div>

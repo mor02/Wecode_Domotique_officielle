@@ -3,6 +3,7 @@ package myeasyhome.javabean;
 public class Utilisateur {
 	private String login ;
 	private String passwd ;
+	private Maison m;
 	
 	public Utilisateur(){
 		
@@ -23,6 +24,11 @@ public class Utilisateur {
 	public void setPasswd(String passwd) {
 		this.passwd = passwd;
 	};
-	
+	public Maison getM() {
+		return m;
+	}
+	public void setM(Maison m) {
+		this.m = m;
+	}
 
 }

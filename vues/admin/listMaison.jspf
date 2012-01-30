@@ -1,0 +1,38 @@
+<%@page import="java.util.ArrayList"%>
+<%@page import="myeasyhome.javabean.Maison"%>
+
+<div class="slider" id="tabs_block">
+	<div class="slice1" id="section-1">
+		<p class="img">&nbsp;</p>
+		<h2>Liste des Maisons:</h2>
+		<form name="listMaison" action="do.ControleurMaison" method="post">
+			<table>
+				<%
+					ArrayList<Maison> maisons = new ArrayList<Maison>();
+					maisons =(ArrayList<Maison>) request.getAttribute("maisons");
+					
+					for (int i = 0; i < maisons.size(); i++) {
+				%>
+				<tr>
+					<td><%=maisons.get(i).getAdresse_Maison()%></td>
+					<td><%=maisons.get(i).getProprietaire_Maison()%></td>
+					<td><a
+						href="ControleurEtage?idMaison=<%=maisons.get(i).getId_Maison()%>">
+							Selectionner</a>
+					</td>
+				</tr>
+
+
+				<%
+					}
+				%>
+			</table>
+		</form>
+	</div>
+
+	<ul class="body_menu_nav">
+
+	</ul>
+</div>
+<div class="clr"></div>
+<div class="clr"></div>

@@ -1,0 +1,12 @@
+<%
+  HttpSession sess = request.getSession(false); 
+ 
+ if(sess!=null) { 
+	 sess.invalidate(); //détruire la session utilisateur si celle-ci existe
+  }   
+%>
+<script type="text/javascript">
+<!--
+window.location = "index.jsp"
+//-->
+</script>

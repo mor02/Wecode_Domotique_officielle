@@ -1,42 +1,43 @@
-package org.apache.jsp.vues.admin;
+package org.apache.jsp.vues.user;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class rajoutEntite_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class accueil_jspf extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
-  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+  private static final javax.servlet.jsp.JspFactory _jspxFactory =
+          javax.servlet.jsp.JspFactory.getDefaultFactory();
 
-  private static java.util.List _jspx_dependants;
+  private static java.util.List<java.lang.String> _jspx_dependants;
 
   private javax.el.ExpressionFactory _el_expressionfactory;
-  private org.apache.AnnotationProcessor _jsp_annotationprocessor;
+  private org.apache.tomcat.InstanceManager _jsp_instancemanager;
 
-  public Object getDependants() {
+  public java.util.List<java.lang.String> getDependants() {
     return _jspx_dependants;
   }
 
   public void _jspInit() {
     _el_expressionfactory = _jspxFactory.getJspApplicationContext(getServletConfig().getServletContext()).getExpressionFactory();
-    _jsp_annotationprocessor = (org.apache.AnnotationProcessor) getServletConfig().getServletContext().getAttribute(org.apache.AnnotationProcessor.class.getName());
+    _jsp_instancemanager = org.apache.jasper.runtime.InstanceManagerFactory.getInstanceManager(getServletConfig());
   }
 
   public void _jspDestroy() {
   }
 
-  public void _jspService(HttpServletRequest request, HttpServletResponse response)
-        throws java.io.IOException, ServletException {
+  public void _jspService(final javax.servlet.http.HttpServletRequest request, final javax.servlet.http.HttpServletResponse response)
+        throws java.io.IOException, javax.servlet.ServletException {
 
-    PageContext pageContext = null;
-    HttpSession session = null;
-    ServletContext application = null;
-    ServletConfig config = null;
-    JspWriter out = null;
-    Object page = this;
-    JspWriter _jspx_out = null;
-    PageContext _jspx_page_context = null;
+    final javax.servlet.jsp.PageContext pageContext;
+    javax.servlet.http.HttpSession session = null;
+    final javax.servlet.ServletContext application;
+    final javax.servlet.ServletConfig config;
+    javax.servlet.jsp.JspWriter out = null;
+    final java.lang.Object page = this;
+    javax.servlet.jsp.JspWriter _jspx_out = null;
+    javax.servlet.jsp.PageContext _jspx_page_context = null;
 
 
     try {
@@ -53,11 +54,13 @@ public final class rajoutEntite_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write(" <div class=\"slider\" id=\"tabs_block\">\r\n");
       out.write("      <div class=\"slice1\" id=\"section-1\">\r\n");
       out.write("        <p class=\"img\">&nbsp;</p>\r\n");
-      out.write("        <h2>Entite ajouter </h2>\r\n");
-      out.write("        <p>  Entite ajouter</p>\r\n");
-      out.write("        <p>&nbsp;</p>\r\n");
-      out.write("        <p>&nbsp;</p>\r\n");
-      out.write("        <p>&nbsp;</p>\r\n");
+      out.write("        <h2>Page User </h2>\r\n");
+      out.write("        <p>  aa </p>\r\n");
+      out.write("        \r\n");
+      out.write("      \t<form name=\"listEtage\" action=\"do.ControleurEtage\" method=\"post\">\r\n");
+      out.write("\t\t<input type=\"submit\" class=\"submitbutton\" value=\"Lister\" name=\"etage\"/>\r\n");
+      out.write("\t\t</form>\r\n");
+      out.write("\t\t\r\n");
       out.write("      </div>\r\n");
       out.write("    \r\n");
       out.write("      <ul class=\"body_menu_nav\">\r\n");
@@ -66,8 +69,8 @@ public final class rajoutEntite_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("    </div>\r\n");
       out.write("    <div class=\"clr\"></div>\r\n");
       out.write("    <div class=\"clr\"></div>");
-    } catch (Throwable t) {
-      if (!(t instanceof SkipPageException)){
+    } catch (java.lang.Throwable t) {
+      if (!(t instanceof javax.servlet.jsp.SkipPageException)){
         out = _jspx_out;
         if (out != null && out.getBufferSize() != 0)
           try { out.clearBuffer(); } catch (java.io.IOException e) {}

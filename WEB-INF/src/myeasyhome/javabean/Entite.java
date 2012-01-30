@@ -1,3 +1,10 @@
+/*DATE CREATION - 26/01/2012
+ * PROGRAMMEUR - AMGHAR MOHAMED AMINE
+ * 
+ * 
+ * */
+
+
 package myeasyhome.javabean;
 
 public class Entite {

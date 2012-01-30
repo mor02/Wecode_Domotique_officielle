@@ -40,6 +40,7 @@ public class ControleurUtilisateur extends HttpServlet {
                         // Si le service valide l'utilisateur on r'envois le type d'utlisateur
                 	  	// 1 : pour un simple utlisateur : user.
                 	  	// 2 : pour un administrateur 
+                	  
                         if (modeleLogin.checkUserPassword(user) == 1 || modeleLogin.checkUserPassword(user) == 2) {
                              session = request.getSession(true);
                              session.setAttribute("loggedUser", login); 
@@ -67,4 +68,7 @@ public class ControleurUtilisateur extends HttpServlet {
                              .forward(request, response);
             }
       }
+
+
+      
 }

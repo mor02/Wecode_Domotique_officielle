@@ -1,0 +1,42 @@
+ <%@page import="java.util.LinkedList"%>
+<%@page import="java.util.Iterator"%>
+<%@page import="myeasyhome.javabean.Piece"%>
+<div class="slider" id="tabs_block">
+      <div class="slice1" id="section-1">
+        <p class="img">&nbsp;</p>
+        <h2><%=request.getAttribute("titre") %> </h2>
+        
+        <%= request.getAttribute("message") %>
+        
+       
+       
+        
+        <%
+        
+        int numEtage = Integer.parseInt(request.getAttribute("numEtage"));
+        
+        LinkedList listPieceParEtage = Piece.listerPieceParEtage(numEtage);
+        
+        if(!listPieceParEtage.isEmpty())
+        {
+        	Iterator it = listPieceParEtage.iterator();
+        	
+        	while(it.hasNext())
+        	{
+        		Piece p = (Piece)it.next();
+        		
+        			out.println(p.getIdPiece());
+        		
+        		
+        	}
+        }
+        %>
+        
+      </div>
+    
+      <ul class="body_menu_nav">
+       
+      </ul>
+    </div>
+    <div class="clr"></div>
+    <div class="clr"></div>

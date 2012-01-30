@@ -1,0 +1,17 @@
+ <div class="slider" id="tabs_block">
+      <div class="slice1" id="section-1">
+        <p class="img">&nbsp;</p>
+        <h2>Demande d'ajout de piece </h2>
+        <a herf="/vues/index.jsp?page=ajouterPiece&operation=demandeAjouterPiece"> 
+        Ajouter une piece </a>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      </div>
+    
+      <ul class="body_menu_nav">
+       
+      </ul>
+    </div>
+    <div class="clr"></div>
+    <div class="clr"></div>

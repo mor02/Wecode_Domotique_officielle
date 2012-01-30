@@ -3,9 +3,11 @@
         <p class="img">&nbsp;</p>
         <h2>Page User </h2>
         <p>  aa </p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
+        
+      	<form name="listEtage" action="do.ControleurEtage" method="post">
+		<input type="submit" class="submitbutton" value="Lister" name="etage"/>
+		</form>
+		
       </div>
     
       <ul class="body_menu_nav">
